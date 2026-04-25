@@ -21,6 +21,8 @@ private:
 
     static constexpr const size_t block_metadata_size = sizeof(void*) + sizeof(size_t);
 
+    mutable std::mutex _mtx;
+
 public:
 
     explicit allocator_sorted_list(

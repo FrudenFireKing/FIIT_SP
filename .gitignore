@@ -6,6 +6,12 @@ cmake-build-*
 *.txt
 !CMakeLists.txt
 
+@"
+# Build directories
+build/
+*/build/
+**/build/
+
 # Compiled Object files
 *.slo
 *.lo
